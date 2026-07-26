@@ -1,0 +1,55 @@
+/* ======================================
+   PAGE SECTIONS
+====================================== */
+
+
+/* ===========================
+   MENU
+=========================== */
+
+#menu {
+    background: #FFFDFB;
+}
+
+
+/* ===========================
+   ABOUT
+=========================== */
+
+#about {
+    background: var(--background);
+}
+
+
+/* ===========================
+   CONTACT
+=========================== */
+
+#contact {
+    background: #FFFDFB;
+}
+
+
+/* ===========================
+   NEWSLETTER
+=========================== */
+
+.newsletter {
+    margin-top: 100px;
+    background: linear-gradient(135deg, #3B2618, #5A3A22);
+    border-radius: 35px;
+    padding: 70px;
+    color: white;
+    text-align: center;
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background: #24160F;
+    color: white;
+    padding: 80px 8% 40px;
+}
