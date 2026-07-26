@@ -1,0 +1,176 @@
+/* ======================================
+   LAYOUT
+   Header • Navigation • Hero • Containers • Grids
+====================================== */
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar {
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    background: rgba(35, 20, 10, .78);
+    backdrop-filter: blur(18px);
+    transition: .35s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 42px;
+}
+
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 70px;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,.02);
+    pointer-events: none;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(20,10,5,.72),
+            rgba(20,10,5,.45),
+            rgba(20,10,5,.12)
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+    width: 700px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* ===========================
+   SHARED LAYOUT
+=========================== */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 35px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* ===========================
+   FOOTER LAYOUT
+=========================== */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+
+/* ===========================
+   SCROLL BUTTON LAYOUT
+=========================== */
+
+#scrollTop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    z-index: 999;
+}

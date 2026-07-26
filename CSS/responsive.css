@@ -1,0 +1,123 @@
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+
+/* ===========================
+   LARGE TABLETS
+=========================== */
+
+@media (max-width:1100px){
+
+    .hero-content h1{
+        font-size:74px;
+    }
+
+    .hero-content p{
+        width:100%;
+    }
+
+    .about-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width:900px){
+
+    .navbar{
+        padding:20px 30px;
+    }
+
+    .nav-links{
+        gap:22px;
+    }
+
+    .hero{
+        padding:0 30px;
+    }
+
+    .hero-content h1{
+        font-size:60px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .menu-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:650px){
+
+    .logo h2{
+        font-size:34px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .visit-navbar{
+        display:none;
+    }
+
+    .hero{
+        background-position:center;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:48px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .section-title h2{
+        font-size:46px;
+    }
+
+    .newsletter{
+        padding:45px 25px;
+    }
+
+    .newsletter h2{
+        font-size:40px;
+    }
+
+    .newsletter input{
+        width:100%;
+    }
+
+    .newsletter button{
+        width:100%;
+    }
+
+}

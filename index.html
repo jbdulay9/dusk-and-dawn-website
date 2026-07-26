@@ -1,0 +1,343 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<!-- 
+Project: Dusk & Dawn 
+File: index.html 
+Purpose: Main HTML structure for the café landing page. 
+Notes: Links to style.css and script.js. Section IDs used by JavaScript: #menu, #about, 
+#contact. --> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Dusk & Dawn</title> 
+ 
+    <!-- Google Fonts --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;60
+0;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+ 
+    <!-- Font Awesome --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font
+awesome/6.7.2/css/all.min.css"> 
+ 
+    <!-- CSS --> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+ 
+<body> 
+ 
+    <!-- =========================== 
+         HEADER 
+    =========================== --> 
+    <header> 
+        <nav class="navbar"> 
+            <div class="logo"> 
+                <i class="fa-solid fa-mug-hot"></i> 
+                <h2>Dusk & Dawn</h2> 
+            </div> 
+ 
+            <div class="nav-right"> 
+                <ul class="nav-links"> 
+                    <li><a href="#">Home</a></li> 
+                    <li><a href="#menu">Menu</a></li> 
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul> 
+ 
+                <button class="visit-navbar"> 
+                    <i class="fa-solid fa-location-dot"></i> 
+                    Visit Us 
+                </button> 
+            </div> 
+        </nav> 
+    </header> 
+ 
+    <!-- =========================== 
+         HERO 
+    =========================== --> 
+    <section class="hero"> 
+        <div class="overlay"></div> 
+ 
+        <div class="hero-content"> 
+            <h1> 
+                Every Hour 
+                <br> 
+                Has Its 
+                <br> 
+                Perfect Cup. 
+            </h1> 
+ 
+            <p> 
+                Experience handcrafted coffee, 
+                fresh pastries, 
+                and cozy conversations. 
+                Whether it's sunrise or sunset, 
+                there's always a perfect moment 
+                at Dusk & Dawn. 
+            </p> 
+ 
+            <div class="hero-buttons"> 
+                <button class="menu-btn"> 
+                    <i class="fa-solid fa-mug-hot"></i> 
+                    Explore Menu 
+                </button> 
+ 
+                <button class="story-btn"> 
+                    <i class="fa-regular fa-heart"></i> 
+                    Our Story 
+                </button> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- =========================== 
+         MENU 
+    =========================== --> 
+    <section id="menu"> 
+        <div class="section-title"> 
+            <p>OUR FAVORITES</p> 
+            <h2>Featured Drinks</h2> 
+            <div class="section-divider"></div> 
+        </div> 
+ 
+        <div class="menu-grid"> 
+            <div class="card"> 
+                <img src="images/latte.jpg" alt="Sunrise Latte"> 
+                <div class="card-content"> 
+                    <h3>Sunrise Latte</h3> 
+                    <p> 
+                        Creamy espresso blended with 
+                        fresh steamed milk. 
+                    </p> 
+ 
+                    <div class="price"> 
+                        <span>₱170</span> 
+                        <button class="order-btn" data-item="Sunrise Latte" data-price="170"> 
+                            Order 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+ 
+            <div class="card"> 
+                <img src="images/mocha.jpg" alt="Midnight Mocha"> 
+                <div class="card-content"> 
+                    <h3>Midnight Mocha</h3> 
+                    <p> 
+                        Dark chocolate, 
+                        espresso, 
+                        and whipped cream. 
+                    </p> 
+ 
+                    <div class="price"> 
+                        <span>₱185</span> 
+                        <button class="order-btn" data-item="Midnight Mocha" data-price="185"> 
+                            Order 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+ 
+            <div class="card"> 
+                <img src="images/cloud.jpg" alt="Vanilla Cloud"> 
+                <div class="card-content"> 
+                    <h3>Vanilla Cloud</h3> 
+                    <p> 
+                        Sweet vanilla, 
+                        light foam, 
+                        smooth finish. 
+                    </p> 
+ 
+                    <div class="price"> 
+                        <span>₱180</span> 
+                        <button class="order-btn" data-item="Vanilla Cloud" data-price="180"> 
+                            Order 
+                        </button> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- =========================== 
+         ABOUT 
+    =========================== --> 
+    <section id="about"> 
+        <div class="about-container"> 
+            <div class="about-image"> 
+                <img src="images/about.jpg" alt="Inside Dusk & Dawn"> 
+            </div> 
+ 
+            <div class="about-text"> 
+                <div class="section-title about-title"> 
+                    <p>OUR STORY</p> 
+                    <h2>Where Every Cup Tells A Story</h2> 
+                    <div class="section-divider"></div> 
+                </div> 
+ 
+                <p> 
+                    At Dusk & Dawn, coffee is more than just 
+                    a drink—it is a moment to slow down, 
+                    reconnect, and enjoy life's simple 
+                    pleasures. 
+                </p> 
+ 
+                <p> 
+                    Inspired by warm mornings and peaceful 
+                    evenings, every drink is handcrafted 
+                    using carefully selected beans and 
+                    fresh ingredients to create memorable 
+                    experiences. 
+                </p> 
+ 
+                <p> 
+                    Whether you're studying, catching up 
+                    with friends, or simply enjoying a 
+                    quiet afternoon, we hope Dusk & Dawn 
+                    feels like your second home. 
+                </p> 
+ 
+                <button class="about-btn">Learn More</button> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- =========================== 
+         CONTACT 
+    =========================== --> 
+    <section id="contact"> 
+        <div class="section-title"> 
+            <p>VISIT US</p> 
+            <h2>Find Our Café</h2> 
+            <div class="section-divider"></div> 
+        </div> 
+ 
+        <div class="contact-grid"> 
+            <div class="contact-card"> 
+                <i class="fa-solid fa-location-dot"></i> 
+                <h3>Location</h3> 
+                <p> 
+                    North Caloocan City 
+                    <br> 
+                    Philippines 
+                </p> 
+            </div> 
+ 
+            <div class="contact-card"> 
+                <i class="fa-regular fa-clock"></i> 
+                <h3>Opening Hours</h3> 
+                <p> 
+                    Monday – Sunday 
+                    <br> 
+                    7:00 AM – 11:00 PM 
+                </p> 
+            </div> 
+ 
+            <div class="contact-card"> 
+                <i class="fa-solid fa-phone"></i> 
+                <h3>Contact</h3> 
+                <p> 
+                    +63 912 345 6789 
+                    <br> 
+                    hello@duskanddawn.com 
+                </p> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- =========================== 
+         NEWSLETTER 
+    =========================== --> 
+    <section class="newsletter"> 
+        <h2>Stay Connected</h2> 
+        <p> 
+            Receive updates about new drinks, 
+            seasonal specials, 
+            and exclusive offers. 
+        </p> 
+ 
+        <form> 
+            <input type="email" placeholder="Enter your email"> 
+            <button type="submit">Subscribe</button> 
+        </form> 
+    </section> 
+ 
+    <!-- =========================== 
+         FOOTER 
+    =========================== --> 
+    <footer> 
+        <div class="footer-container"> 
+            <div> 
+                <div class="footer-logo"> 
+                    <i class="fa-solid fa-mug-hot"></i> 
+                    <h2>Dusk & Dawn</h2> 
+                </div> 
+ 
+                <p class="footer-description"> 
+                    Crafted with passion, inspired by the beauty 
+                    of sunrise and sunset. Whether you're grabbing 
+                    your morning coffee or winding down after a 
+                    long day, Dusk & Dawn is your cozy escape. 
+                </p> 
+ 
+                <div class="social-icons"> 
+                    <a href="#"> 
+                        <i class="fa-brands fa-facebook-f"></i> 
+                    </a> 
+                    <a href="#"> 
+                        <i class="fa-brands fa-instagram"></i> 
+                    </a> 
+                    <a href="#"> 
+                        <i class="fa-brands fa-x-twitter"></i> 
+                    </a> 
+                    <a href="#"> 
+                        <i class="fa-brands fa-tiktok"></i> 
+                    </a> 
+                </div> 
+            </div> 
+ 
+            <div class="footer-column"> 
+                <h3>Quick Links</h3> 
+                <ul> 
+                    <li><a href="#">Home</a></li> 
+                    <li><a href="#menu">Menu</a></li> 
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul> 
+            </div> 
+ 
+            <div class="footer-column"> 
+                <h3>Opening Hours</h3> 
+                <ul> 
+                    <li>Monday - Friday</li> 
+                    <li>7:00 AM - 10:00 PM</li> 
+                    <br> 
+                    <li>Saturday - Sunday</li> 
+                    <li>8:00 AM - 11:00 PM</li> 
+                </ul> 
+            </div> 
+        </div> 
+ 
+        <div class="footer-bottom"> 
+            © 2026 Dusk & Dawn. 
+            Designed & Developed by Yohan. 
+        </div> 
+    </footer> 
+ 
+    <!-- =========================== 
+         SCROLL TO TOP BUTTON 
+    =========================== --> 
+    <button id="scrollTop"> 
+        <i class="fa-solid fa-arrow-up"></i> 
+    </button> 
+ 
+    <!-- =========================== 
+JAVASCRIPT 
+=========================== --> 
+<script src="script.js"></script> 
+</body> 
+</html> 
